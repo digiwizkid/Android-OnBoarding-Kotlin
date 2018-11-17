@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#ff5722"
+             tools:context=".fragments.SecondFragment">
+
+    <TextView
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Second Screen"/>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:weightSum="2">
+
+        <Button
+                android:id="@+id/second_prev_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#ff5722"
+                android:text="Prev"/>
+
+        <Button
+                android:id="@+id/second_finish_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#ff5722"
+                android:text="Finish"/>
+
+    </LinearLayout>
+
+</FrameLayout>
